@@ -187,7 +187,7 @@ extern struct { int idum2, iy, ir[32]; } rand2_;
 extern struct { long long int state[4]; int first;} taus113state_;
 extern struct { int ktype[15][15]; } types_;
 extern struct { int  tflag, ifflag, remnantflag, wdflag, bhflag, windflag,  qcflag, eddlimflag, bhspinflag, aic, rejuvflag,  htpmb, st_cr, st_tide, bdecayfac, grflag, bhms_coll_flag, wd_mass_lim, rtmsflag; } flags_;
-extern struct { int ceflag,cekickflag,cemergeflag,cehestarflag,ussn; } ceflags_;
+extern struct { int ceflag,ce2stageflag,cekickflag,cemergeflag,cehestarflag,ussn; } ceflags_;
 extern struct { int pisn_track[2]; } trackers_;
 extern struct { double zsun; } metvars_;
 extern struct { double don_lim, acc_lim; } mtvars_; 
@@ -264,6 +264,7 @@ void bse_set_pts3(double pts3); /* timestep taken in HG, HeMS phases (0.02) */
 void bse_set_alpha1(double alpha1); /* common-envelope efficiency parameter (1.0) */
 void bse_set_lambdaf(double lambdaf); /* binding energy factor for common envelope evolution (0.5) */
 void bse_set_ceflag(int ceflag); /* ceflag > 0 activates spin-energy correction in common-envelope (0); ceflag = 3 activates de Kool common-envelope model (0) */
+void bse_set_ce2stageflag(int ce2stageflag); /* ce2stageflag = 1 uses the two-stage formalism of Hirai & Mandel 2022 for CEE */
 void bse_set_cehestarflag(int cehestarflag); /* cehestarflag > 0 activates spin-energy correction in common-envelope (0); cehestarflag = 3 activates de Kool common-envelope model (0) */
 void bse_set_cemergeflag(int cemergeflag); /* cemergeflag > 0 activates spin-energy correction in common-envelope (0); cemergeflag = 3 activates de Kool common-envelope model (0) */
 void bse_set_cekickflag(int cekickflag); /* cekickflag > 0 activates spin-energy correction in common-envelope (0); cekickflag = 3 activates de Kool common-envelope model (0) */

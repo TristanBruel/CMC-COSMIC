@@ -131,6 +131,7 @@ void stellar_evolve(cmc_fits_data_t *cfd)
 	bse_set_sigmadiv(BSE_SIGMADIV);
 	bse_set_alpha1(BSE_ALPHA1);
 	bse_set_lambdaf(BSE_LAMBDAF);
+	bse_set_ce2stageflag(BSE_CE2STAGEFLAG);
 	bse_set_ceflag(BSE_CEFLAG);
 	bse_set_cehestarflag(BSE_CEHESTARFLAG);
 	bse_set_cemergeflag(BSE_CEMERGEFLAG);

@@ -1209,11 +1209,16 @@ typedef struct{
 * @brief alpha1 is the common-envelope efficiency parameter (1.0 or 3.0 depending upon what you like and if lambda is variable)
 */
 	int BSE_ALPHA1;
-#define PARAMDOC_BSE_LAMBDAF "labmda is the stellar binding energy factor for common-envelope evolution (0.5; +'ve allows it to vary, -'ve holds it constant at that value always)."
+#define PARAMDOC_BSE_LAMBDAF "lambda is the stellar binding energy factor for common-envelope evolution (0.5; +'ve allows it to vary, -'ve holds it constant at that value always)."
 /**
 * @brief labmda is the stellar binding energy factor for common-envelope evolution (0.5; +'ve allows it to vary, -'ve holds it constant at that value always).
 */
 	int BSE_LAMBDAF;
+#define PARAMDOC_BSE_CE2STAGEFLAG "ce2stageflag = 1 uses the two-stage formalism of Hirai & Mandel 2022"
+/**
+* @brief ce2stageflag = 1 uses the two-stage formalism of Hirai & Mandel 2022.
+*/
+        int BSE_CE2STAGEFLAG;
 #define PARAMDOC_BSE_CEFLAG "ceflag sets CE prescription used. = 0 sets Tout et al. method, = 3 activates de Kool common-envelope models (normally 0)."
 /**
 * @brief ceflag sets CE prescription used. = 0 sets Tout et al. method, = 3 activates de Kool common-envelope models (normally 0).
