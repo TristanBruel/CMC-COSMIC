@@ -108,3 +108,6 @@ ENV/
 
 # macOs hidden system files
 .DS_Store
+
+# install directories
+src/bse_wrap/bse/COSMIC/

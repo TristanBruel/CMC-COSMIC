@@ -63,6 +63,7 @@ void stellar_evolve(cmc_fits_data_t *cfd)
         double BSE_ACC2= 1.5;
         double BSE_ALPHA1= 1.0;
         double BSE_LAMBDAF= 0.5;
+        int BSE_CE2STAGEFLAG= 1;
         int BSE_CEFLAG= 0;
         int BSE_CEKICKFLAG= 2;
         int BSE_CEMERGEFLAG= 0;

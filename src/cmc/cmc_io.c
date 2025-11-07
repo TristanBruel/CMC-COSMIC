@@ -1440,7 +1440,7 @@ if(myid==0) {
                                 parsed.BSE_LAMBDAF = 1;
                         } else if (strcmp(parameter_name, "CE2STAGEFLAG")== 0) {
                                 PRINT_PARSED(PARAMDOC_BSE_CE2STAGEFLAG);
-                                sscanf(values, "%lf", &BSE_CE2STAGEFLAG);
+                                sscanf(values, "%i", &BSE_CE2STAGEFLAG);
                                 parsed.BSE_CE2STAGEFLAG = 1;
                         } else if (strcmp(parameter_name, "CEFLAG")== 0) {
                                 PRINT_PARSED(PARAMDOC_BSE_CEFLAG);
@@ -1825,7 +1825,7 @@ if(myid==0) {
 
 	// ce2stageflag = 1 uses the two-stage formalism of Hirai & Mandel 2022 for CEE
 	// default = 1
-        CHECK_PARSED(BSE_CE2STAGEFLAG, 0.0, PARAMDOC_BSE_CE2STAGEFLAG);
+        CHECK_PARSED(BSE_CE2STAGEFLAG, 1, PARAMDOC_BSE_CE2STAGEFLAG);
 
         // ceflag=1 used the method from de Kool 1990 for setting the initial orbital energy
         // ceflag=0 does not use this method (uses the core mass to calculate initial orbital energy)
