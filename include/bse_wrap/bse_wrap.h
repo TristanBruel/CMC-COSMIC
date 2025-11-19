@@ -23,8 +23,8 @@
 #include <math.h>
 #include "../common/taus113-v2.h"
 
-#define BCM_NUM_COLUMNS 49 
-#define BPP_NUM_COLUMNS 49 
+#define BCM_NUM_COLUMNS 51 
+#define BPP_NUM_COLUMNS 51 
 #define BCM_NUM_ROWS 50000 
 #define BPP_NUM_ROWS 1000 
 

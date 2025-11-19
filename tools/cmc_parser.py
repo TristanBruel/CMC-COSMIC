@@ -63,14 +63,14 @@ class collision:
 		if self.type == 'single-single':
 			self.parse_one_coll(args)
 		elif self.type == 'binary-single':
-			if len(args) == 8:
+			if len(args) == 10:
 				self.parse_one_coll(args)
 			else:
 				self.parse_two_coll(args)
 		elif self.type == 'binary-binary':
-			if len(args) == 8:
+			if len(args) == 10:
 				self.parse_one_coll(args)
-			elif len(args) == 9:
+			elif len(args) == 12:
 				self.parse_two_coll(args)
 			else:
 				self.parse_three_coll(args)
